@@ -36,7 +36,7 @@
                 @foreach (var obj in Model.OrderBy(u => u.DisplayOrder))
                 {
                     <tr>
-                        <td>@obj.Name</td>
+                        <td>@(obj.Name ?? "")</td>
                         <td>
                             @obj.DisplayOrder
                         </td>
